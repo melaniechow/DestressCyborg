@@ -39,6 +39,8 @@ for filename in os.listdir(directory):
             box = boxes[i]
             ic = im.crop(box)
             ic = ic.filter(ImageFilter.GaussianBlur(10))
+            ic = ic.filter(ImageFilter.BLUR)
+            ic = ic.filter(ImageFilter.BLUR)
             im.paste(ic, box)
 
     im.save("%s/%s_blur.jpg" % (directory, rawname))
