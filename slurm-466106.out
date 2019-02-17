@@ -1,0 +1,67 @@
+ffmpeg version 3.4.5 Copyright (c) 2000-2018 the FFmpeg developers
+  built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-36)
+  configuration: --prefix=/usr --bindir=/usr/bin --datadir=/usr/share/ffmpeg --docdir=/usr/share/doc/ffmpeg --incdir=/usr/include/ffmpeg --libdir=/usr/lib64 --mandir=/usr/share/man --arch=x86_64 --optflags='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic' --extra-ldflags='-Wl,-z,relro ' --extra-cflags=' ' --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc --enable-version3 --enable-bzlib --disable-crystalhd --enable-fontconfig --enable-gcrypt --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libcdio --enable-libdrm --enable-indev=jack --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libmp3lame --enable-openal --enable-opencl --enable-opengl --enable-libopenjpeg --enable-libpulse --enable-librsvg --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libv4l2 --enable-libvidstab --enable-libx264 --enable-libx265 --enable-libxvid --enable-avfilter --enable-avresample --enable-postproc --enable-pthreads --disable-static --enable-shared --enable-gpl --disable-debug --disable-stripping --shlibdir=/usr/lib64 --enable-libmfx --enable-runtime-cpudetect
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'vid4.MOV':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    creation_time   : 2019-02-17T04:05:28.000000Z
+    com.apple.quicktime.location.ISO6709: +41.7999-087.5895+182.078/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 7 Plus
+    com.apple.quicktime.software: 12.0.1
+    com.apple.quicktime.creationdate: 2019-02-16T21:54:28-0600
+    com.apple.photos.originating.signature: AWGKL6UNYcVbE9xg7nWrPAOHKDJG
+  Duration: 00:00:46.37, start: 0.000000, bitrate: 10579 kb/s
+    Stream #0:0(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, mono, fltp, 99 kb/s (default)
+    Metadata:
+      creation_time   : 2019-02-17T04:05:28.000000Z
+      handler_name    : Core Media Data Handler
+    Stream #0:1(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709), 1920x1080 [SAR 1:1 DAR 16:9], 10463 kb/s, 30 fps, 30 tbr, 600 tbn, 1200 tbc (default)
+    Metadata:
+      creation_time   : 2019-02-17T04:05:28.000000Z
+      handler_name    : Core Media Data Handler
+      encoder         : H.264
+    Stream #0:2(und): Data: none (mebx / 0x7862656D), 11 kb/s (default)
+    Metadata:
+      creation_time   : 2019-02-17T04:05:28.000000Z
+      handler_name    : Core Media Data Handler
+    Stream #0:3(und): Data: none (mebx / 0x7862656D), 0 kb/s (default)
+    Metadata:
+      creation_time   : 2019-02-17T04:05:28.000000Z
+      handler_name    : Core Media Data Handler
+Stream mapping:
+  Stream #0:1 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x2be7ec0] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to 'vid4/%06d.jpg':
+  Metadata:
+    major_brand     : qt  
+    minor_version   : 0
+    compatible_brands: qt  
+    com.apple.photos.originating.signature: AWGKL6UNYcVbE9xg7nWrPAOHKDJG
+    com.apple.quicktime.location.ISO6709: +41.7999-087.5895+182.078/
+    com.apple.quicktime.make: Apple
+    com.apple.quicktime.model: iPhone 7 Plus
+    com.apple.quicktime.software: 12.0.1
+    com.apple.quicktime.creationdate: 2019-02-16T21:54:28-0600
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 1920x1080 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 30 fps, 30 tbn, 30 tbc (default)
+    Metadata:
+      creation_time   : 2019-02-17T04:05:28.000000Z
+      handler_name    : Core Media Data Handler
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=   18 fps=0.0 q=2.0 size=N/A time=00:00:00.50 bitrate=N/A speed=0.964x    frame=   44 fps= 43 q=2.0 size=N/A time=00:00:01.36 bitrate=N/A speed=1.32x    frame=   72 fps= 46 q=2.0 size=N/A time=00:00:02.30 bitrate=N/A speed=1.48x    frame=   96 fps= 46 q=2.0 size=N/A time=00:00:03.10 bitrate=N/A speed= 1.5x    frame=  123 fps= 48 q=2.0 size=N/A time=00:00:04.00 bitrate=N/A speed=1.55x    frame=  152 fps= 49 q=2.0 size=N/A time=00:00:04.96 bitrate=N/A speed= 1.6x    frame=  184 fps= 51 q=2.0 size=N/A time=00:00:06.03 bitrate=N/A speed=1.67x    frame=  218 fps= 53 q=2.0 size=N/A time=00:00:07.16 bitrate=N/A speed=1.74x    frame=  250 fps= 54 q=2.0 size=N/A time=00:00:08.23 bitrate=N/A speed=1.78x    frame=  289 fps= 56 q=2.0 size=N/A time=00:00:09.53 bitrate=N/A speed=1.86x    frame=  329 fps= 58 q=2.0 size=N/A time=00:00:10.86 bitrate=N/A speed=1.93x    frame=  369 fps= 60 q=2.0 size=N/A time=00:00:12.20 bitrate=N/A speed=1.99x    frame=  392 fps= 59 q=2.0 size=N/A time=00:00:12.96 bitrate=N/A speed=1.95x    frame=  421 fps= 59 q=2.0 size=N/A time=00:00:13.93 bitrate=N/A speed=1.95x    frame=  456 fps= 60 q=2.0 size=N/A time=00:00:15.10 bitrate=N/A speed=1.97x    frame=  496 fps= 61 q=2.0 size=N/A time=00:00:16.43 bitrate=N/A speed=2.01x    frame=  536 fps= 62 q=2.0 size=N/A time=00:00:17.76 bitrate=N/A speed=2.05x    frame=  575 fps= 63 q=2.0 size=N/A time=00:00:19.06 bitrate=N/A speed=2.08x    frame=  614 fps= 63 q=2.0 size=N/A time=00:00:20.36 bitrate=N/A speed= 2.1x    frame=  654 fps= 64 q=2.0 size=N/A time=00:00:21.66 bitrate=N/A speed=2.13x    frame=  694 fps= 65 q=2.0 size=N/A time=00:00:23.00 bitrate=N/A speed=2.15x    frame=  735 fps= 66 q=2.0 size=N/A time=00:00:24.36 bitrate=N/A speed=2.18x    frame=  774 fps= 66 q=2.0 size=N/A time=00:00:25.66 bitrate=N/A speed=2.19x    frame=  814 fps= 67 q=2.0 size=N/A time=00:00:27.00 bitrate=N/A speed=2.21x    frame=  840 fps= 66 q=2.0 size=N/A time=00:00:27.86 bitrate=N/A speed=2.19x    frame=  871 fps= 66 q=2.0 size=N/A time=00:00:28.90 bitrate=N/A speed=2.18x    frame=  904 fps= 66 q=2.0 size=N/A time=00:00:30.00 bitrate=N/A speed=2.18x    frame=  930 fps= 65 q=2.0 size=N/A time=00:00:30.86 bitrate=N/A speed=2.16x    frame=  961 fps= 65 q=2.0 size=N/A time=00:00:31.90 bitrate=N/A speed=2.16x    frame=  990 fps= 65 q=2.0 size=N/A time=00:00:32.86 bitrate=N/A speed=2.15x    frame= 1016 fps= 64 q=2.0 size=N/A time=00:00:33.73 bitrate=N/A speed=2.14x    frame= 1043 fps= 64 q=2.0 size=N/A time=00:00:34.63 bitrate=N/A speed=2.12x    frame= 1069 fps= 64 q=2.0 size=N/A time=00:00:35.50 bitrate=N/A speed=2.11x    frame= 1101 fps= 64 q=2.0 size=N/A time=00:00:36.56 bitrate=N/A speed=2.11x    frame= 1139 fps= 64 q=2.0 size=N/A time=00:00:37.83 bitrate=N/A speed=2.12x    frame= 1179 fps= 64 q=2.0 size=N/A time=00:00:39.16 bitrate=N/A speed=2.14x    frame= 1219 fps= 65 q=2.0 size=N/A time=00:00:40.50 bitrate=N/A speed=2.15x    frame= 1258 fps= 65 q=2.0 size=N/A time=00:00:41.80 bitrate=N/A speed=2.16x    frame= 1299 fps= 65 q=2.0 size=N/A time=00:00:43.16 bitrate=N/A speed=2.17x    frame= 1339 fps= 66 q=2.0 size=N/A time=00:00:44.50 bitrate=N/A speed=2.19x    frame= 1381 fps= 66 q=2.0 size=N/A time=00:00:45.90 bitrate=N/A speed= 2.2x    frame= 1391 fps= 66 q=2.0 Lsize=N/A time=00:00:46.36 bitrate=N/A speed=2.21x    
+video:229115kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
