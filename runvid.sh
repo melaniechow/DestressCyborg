@@ -17,4 +17,4 @@
 # load desired python version (check availability with 'module avail')
 module load python/booth/3.6/3.6.3
 
-ffmpeg -i vid2.mp4 -qscale:v 2 vid2/%06d.jpg
+ffmpeg -i vid3.MOV -qscale:v 2 vid3/%06d.jpg
