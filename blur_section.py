@@ -3,7 +3,7 @@
 from PIL import Image, ImageFilter, ImageOps
 import os
 
-directory = "vid4"
+directory = "vid5"
 
 for filename in os.listdir(directory):
     if os.path.splitext(filename)[1] == ".jpg":
@@ -36,7 +36,7 @@ for filename in os.listdir(directory):
 
     for i in range(len(boxes)):
         if (int(lines[i][0]) in trigger):
-            img = Image.open("spongebob.jpg", "r")
+            img = Image.open("Arthur.jpg", "r")
             box = boxes[i]
             box_width = box[2] - box[0]
             box_height = box[3] - box[1]

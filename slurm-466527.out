@@ -1,0 +1,43 @@
+ffmpeg version 3.4.5 Copyright (c) 2000-2018 the FFmpeg developers
+  built with gcc 4.8.5 (GCC) 20150623 (Red Hat 4.8.5-36)
+  configuration: --prefix=/usr --bindir=/usr/bin --datadir=/usr/share/ffmpeg --docdir=/usr/share/doc/ffmpeg --incdir=/usr/include/ffmpeg --libdir=/usr/lib64 --mandir=/usr/share/man --arch=x86_64 --optflags='-O2 -g -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -fstack-protector-strong --param=ssp-buffer-size=4 -grecord-gcc-switches -m64 -mtune=generic' --extra-ldflags='-Wl,-z,relro ' --extra-cflags=' ' --enable-libopencore-amrnb --enable-libopencore-amrwb --enable-libvo-amrwbenc --enable-version3 --enable-bzlib --disable-crystalhd --enable-fontconfig --enable-gcrypt --enable-gnutls --enable-ladspa --enable-libass --enable-libbluray --enable-libcdio --enable-libdrm --enable-indev=jack --enable-libfreetype --enable-libfribidi --enable-libgsm --enable-libmp3lame --enable-openal --enable-opencl --enable-opengl --enable-libopenjpeg --enable-libpulse --enable-librsvg --enable-libsoxr --enable-libspeex --enable-libtheora --enable-libvorbis --enable-libv4l2 --enable-libvidstab --enable-libx264 --enable-libx265 --enable-libxvid --enable-avfilter --enable-avresample --enable-postproc --enable-pthreads --disable-static --enable-shared --enable-gpl --disable-debug --disable-stripping --shlibdir=/usr/lib64 --enable-libmfx --enable-runtime-cpudetect
+  libavutil      55. 78.100 / 55. 78.100
+  libavcodec     57.107.100 / 57.107.100
+  libavformat    57. 83.100 / 57. 83.100
+  libavdevice    57. 10.100 / 57. 10.100
+  libavfilter     6.107.100 /  6.107.100
+  libavresample   3.  7.  0 /  3.  7.  0
+  libswscale      4.  8.100 /  4.  8.100
+  libswresample   2.  9.100 /  2.  9.100
+  libpostproc    54.  7.100 / 54.  7.100
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'vid5_cut.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf58.20.100
+  Duration: 00:00:45.02, start: 0.000000, bitrate: 750 kb/s
+    Stream #0:0(und): Video: h264 (High) (avc1 / 0x31637661), yuv420p, 640x360 [SAR 1:1 DAR 16:9], 616 kb/s, 23.98 fps, 23.98 tbr, 24k tbn, 47.95 tbc (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc. Created on: 12/03/2018.
+    Stream #0:1(und): Audio: aac (LC) (mp4a / 0x6134706D), 44100 Hz, stereo, fltp, 128 kb/s (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc. Created on: 12/03/2018.
+Stream mapping:
+  Stream #0:0 -> #0:0 (h264 (native) -> mjpeg (native))
+Press [q] to stop, [?] for help
+[swscaler @ 0x267c880] deprecated pixel format used, make sure you did set range correctly
+Output #0, image2, to 'vid5/%06d.jpg':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf57.83.100
+    Stream #0:0(und): Video: mjpeg, yuvj420p(pc), 640x360 [SAR 1:1 DAR 16:9], q=2-31, 200 kb/s, 23.98 fps, 23.98 tbn, 23.98 tbc (default)
+    Metadata:
+      handler_name    : ISO Media file produced by Google Inc. Created on: 12/03/2018.
+      encoder         : Lavc57.107.100 mjpeg
+    Side data:
+      cpb: bitrate max/min/avg: 0/0/200000 buffer size: 0 vbv_delay: -1
+frame=   79 fps=0.0 q=2.0 size=N/A time=00:00:03.16 bitrate=N/A speed=6.28x    frame=  165 fps=163 q=2.0 size=N/A time=00:00:06.75 bitrate=N/A speed= 6.7x    frame=  249 fps=164 q=2.0 size=N/A time=00:00:10.26 bitrate=N/A speed=6.78x    frame=  335 fps=166 q=2.0 size=N/A time=00:00:13.84 bitrate=N/A speed=6.87x    frame=  420 fps=167 q=2.0 size=N/A time=00:00:17.39 bitrate=N/A speed= 6.9x    frame=  505 fps=167 q=2.0 size=N/A time=00:00:20.93 bitrate=N/A speed=6.92x    frame=  583 fps=165 q=2.0 size=N/A time=00:00:24.19 bitrate=N/A speed=6.86x    frame=  668 fps=166 q=2.0 size=N/A time=00:00:27.73 bitrate=N/A speed=6.89x    frame=  753 fps=166 q=2.0 size=N/A time=00:00:31.28 bitrate=N/A speed=6.91x    frame=  838 fps=167 q=2.0 size=N/A time=00:00:34.82 bitrate=N/A speed=6.92x    frame=  923 fps=167 q=2.0 size=N/A time=00:00:38.37 bitrate=N/A speed=6.93x    frame= 1009 fps=167 q=2.0 size=N/A time=00:00:41.95 bitrate=N/A speed=6.95x    frame= 1079 fps=167 q=2.0 Lsize=N/A time=00:00:45.00 bitrate=N/A speed=6.95x    
+video:34008kB audio:0kB subtitle:0kB other streams:0kB global headers:0kB muxing overhead: unknown
