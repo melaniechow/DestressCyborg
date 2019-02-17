@@ -17,5 +17,5 @@
 # load desired python version (check availability with 'module avail')
 module load python/booth/3.6/3.6.3
 
-#ffmpeg -i vid4.MOV -qscale:v 2 vid4/%06d.jpg
-python3 blur_section.py
+ffmpeg -i vid5.mp4 -qscale:v 2 vid5/%06d.jpg
+#python3 blur_section.py
